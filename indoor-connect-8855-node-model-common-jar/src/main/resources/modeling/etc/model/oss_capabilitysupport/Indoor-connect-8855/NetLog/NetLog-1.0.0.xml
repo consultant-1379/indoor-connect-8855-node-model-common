@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- *******************************************************************************
+* COPYRIGHT Ericsson LMI 2017. All rights reserved. * * No part of this document
+may be reproduced in any form without the * written permission of the copyright
+owner.The contents of this document * are subject to revision without notice
+due to continued progress in * methodology, design and manufacturing. Ericsson
+shall have no liability * for any error or damage of any kind resulting from
+the use of this document.
+* ******************************************************************************* -->
+<CapabilitySupportDefinition
+	oc:ns="Indoor-connect-8855"
+	oc:name="NetLog"
+	oc:version="1.0.0"
+	xmlns="urn:com:ericsson:schema:xml:oss:oss_capabilitysupport"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:oc="urn:com:ericsson:schema:xml:oss:oss_common">
+
+	<oc:modelCreationInfo author="Chargers" creationDate="9-6-2023">
+		<oc:designedModel componentId="indoor-connect-8855-node-model-common-jar" />
+	</oc:modelCreationInfo>
+
+	<oc:desc>Contains Network Log related capabilities for Indoor-connect-8855 node</oc:desc>
+	<!-- Mirror model is not supported on Indoor-connect-8855 nodes, setting value to false -->
+	<capability name="supportsModel" value="false" />
+
+	<!-- List of log types supported on Indoor-connect-8855 nodes  -->
+	<complexCapability name="NetlogSupportedLogTypes">
+		<value xsi:type="oc:collectionValue">
+			<oc:values>
+				<oc:value xsi:type="oc:mapValue">
+					<oc:mapEntries>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logType" />
+							<oc:value xsi:type="oc:stringValue" value="hardware" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logPath" />
+							<oc:value xsi:type="oc:stringValue" value="./" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="patternMatch" />
+							<oc:value xsi:type="oc:stringValue" value="true" />
+						</oc:mapEntry>
+					</oc:mapEntries>
+				</oc:value>
+				<oc:value xsi:type="oc:mapValue">
+					<oc:mapEntries>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logType" />
+							<oc:value xsi:type="oc:stringValue" value="err" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logPath" />
+							<oc:value xsi:type="oc:stringValue" value="./" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="patternMatch" />
+							<oc:value xsi:type="oc:stringValue" value="true" />
+						</oc:mapEntry>
+					</oc:mapEntries>
+				</oc:value>
+				<oc:value xsi:type="oc:mapValue">
+					<oc:mapEntries>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logType" />
+							<oc:value xsi:type="oc:stringValue" value="monlog" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logPath" />
+							<oc:value xsi:type="oc:stringValue" value="./" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="patternMatch" />
+							<oc:value xsi:type="oc:stringValue" value="true" />
+						</oc:mapEntry>
+					</oc:mapEntries>
+				</oc:value>
+				<oc:value xsi:type="oc:mapValue">
+					<oc:mapEntries>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logType" />
+							<oc:value xsi:type="oc:stringValue" value="dmesg" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logPath" />
+							<oc:value xsi:type="oc:stringValue" value="./" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="patternMatch" />
+							<oc:value xsi:type="oc:stringValue" value="true" />
+						</oc:mapEntry>
+					</oc:mapEntries>
+				</oc:value>
+				<oc:value xsi:type="oc:mapValue">
+					<oc:mapEntries>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logType" />
+							<oc:value xsi:type="oc:stringValue" value="log" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logPath" />
+							<oc:value xsi:type="oc:stringValue" value="./log" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="patternMatch" />
+							<oc:value xsi:type="oc:stringValue" value="true" />
+						</oc:mapEntry>
+					</oc:mapEntries>
+				</oc:value>
+				<oc:value xsi:type="oc:mapValue">
+					<oc:mapEntries>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logType" />
+							<oc:value xsi:type="oc:stringValue" value="security" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="logPath" />
+							<oc:value xsi:type="oc:stringValue" value="./" />
+						</oc:mapEntry>
+						<oc:mapEntry>
+							<oc:key xsi:type="oc:stringValue" value="patternMatch" />
+							<oc:value xsi:type="oc:stringValue" value="true" />
+						</oc:mapEntry>
+					</oc:mapEntries>
+				</oc:value>
+			</oc:values>
+		</value>
+	</complexCapability>
+</CapabilitySupportDefinition>

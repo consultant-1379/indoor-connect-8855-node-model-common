@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+*******************************************************************************
+* COPYRIGHT Ericsson LMI 2023. All rights reserved.
+*
+* No part of this document may be reproduced in any form without the
+* written permission of the copyright owner.The contents of this document
+* are subject to revision without notice due to continued progress in
+* methodology, design and manufacturing. Ericsson shall have no liability
+* for any error or damage of any kind resulting from the use of this document.
+*
+*******************************************************************************
+-->
+<TargetTypeInformation oc:ns="NODE" oc:name="Indoor-connect-8855" xmlns:oc="urn:com:ericsson:schema:xml:oss:oss_common"
+    xmlns="urn:com:ericsson:schema:xml:oss:oss_targettype" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+    <oc:modelCreationInfo author="Chargers" creationDate="24/03/2023">
+        <oc:designedModel componentId="indoor-connect-8855-node-model-common" />
+    </oc:modelCreationInfo>
+  
+    <oc:desc>This is the target type information model for Network Element type "Indoor-Connect-8855".</oc:desc>
+    <managedFunctionName>Indoor-connect-8855</managedFunctionName>
+	    <rootMoType namespace="ComTop" name="ManagedElement" />
+    <ciMoType namespace="INDOOR_CONNECT_MED" name="Ic8855ConnectivityInformation" />
+  
+</TargetTypeInformation>

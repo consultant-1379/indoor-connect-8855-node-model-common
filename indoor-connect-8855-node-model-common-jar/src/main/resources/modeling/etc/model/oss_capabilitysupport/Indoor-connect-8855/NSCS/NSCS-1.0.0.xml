@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oss_capabilitysupport:CapabilitySupportDefinition
+        oss_common:lifeCycle="CURRENT"
+        oss_common:name="NSCS"
+        oss_common:ns="Indoor-connect-8855"
+        oss_common:version="1.0.0"
+        xmlns:oss_capabilitysupport="urn:com:ericsson:schema:xml:oss:oss_capabilitysupport"
+        xmlns:oss_common="urn:com:ericsson:schema:xml:oss:oss_common"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <oss_common:modelCreationInfo
+            author="Chargers"
+            creationDate="2023-06-15">
+        <oss_common:designedModel componentId="indoor-connect-8855-node-model-common"/>
+    </oss_common:modelCreationInfo>
+    <oss_common:desc>NSCS Capability Support for Target type Indoor-connect-8855.</oss_common:desc>
+
+    <oss_capabilitysupport:capability name="defaultKeyAlgorithm" value="RSA_1024"/>
+    <oss_capabilitysupport:capability name="isNodeSshPrivateKeyImportSupported" value="TRUE" />
+
+    <oss_capabilitysupport:complexCapability name="unsupportedSecadmCliCommands">
+        <oss_capabilitysupport:value xsi:type="oss_common:collectionValue">
+            <oss_common:values>
+                <oss_common:value xsi:type="oss_common:stringValue" value="enrollment"/>
+                <oss_common:value xsi:type="oss_common:stringValue" value="certificate"/>
+                <oss_common:value xsi:type="oss_common:stringValue" value="trust"/>
+                <oss_common:value xsi:type="oss_common:stringValue" value="ipsec"/>
+                <oss_common:value xsi:type="oss_common:stringValue" value="ldap"/>
+                <oss_common:value xsi:type="oss_common:stringValue" value="crlcheck"/>
+                <oss_common:value xsi:type="oss_common:stringValue" value="crldownload"/>
+                <oss_common:value xsi:type="oss_common:stringValue" value="ciphers"/>
+                <oss_common:value xsi:type="oss_common:stringValue" value="rtsel"/>
+                <oss_common:value xsi:type="oss_common:stringValue" value="https"/>
+                <oss_common:value xsi:type="oss_common:stringValue" value="ftpes"/>
+                <oss_common:value xsi:type="oss_common:stringValue" value="laad"/>
+            </oss_common:values>
+        </oss_capabilitysupport:value>
+    </oss_capabilitysupport:complexCapability>
+
+</oss_capabilitysupport:CapabilitySupportDefinition>

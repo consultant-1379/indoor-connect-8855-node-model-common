@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- *******************************************************************************
+    * COPYRIGHT Ericsson LMI 2022. All rights reserved. * * No part of this document
+    may be reproduced in any form without the * written permission of the copyright
+    owner.The contents of this document * are subject to revision without notice
+    due to continued progress in * methodology, design and manufacturing. Ericsson
+    shall have no liability * for any error or damage of any kind resulting from
+    the use of this document. * ******************************************************************************* -->
+<CapabilitySupportDefinition oc:ns="Indoor-connect-8855"
+    oc:name="NodeCLI" oc:version="1.0.0"
+    xmlns="urn:com:ericsson:schema:xml:oss:oss_capabilitysupport"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oc="urn:com:ericsson:schema:xml:oss:oss_common">
+ 
+    <oc:modelCreationInfo author="Chargers"
+        creationDate="28-4-2023">
+        <oc:designedModel componentId="indoor-connect-8855 Common"/>
+    </oc:modelCreationInfo>
+ 
+    <oc:desc>Contains Node-CLI-related capabilities for indoor-connect-8855 node</oc:desc>
+ 
+    <complexCapability name="nodeCLI">
+        <value xsi:type="oc:collectionValue">
+            <oc:values>
+                <oc:value xsi:type="oc:mapValue">
+                    <oc:mapEntries>
+                        <oc:mapEntry>
+                            <oc:key xsi:type="oc:stringValue"
+                                value="protocol" />
+                            <oc:value xsi:type="oc:stringValue"
+                                value="SSH" />
+                        </oc:mapEntry>
+                        <oc:mapEntry>
+                            <oc:key xsi:type="oc:stringValue"
+                                value="auth_type" />
+                            <oc:value xsi:type="oc:stringValue"
+                                value="StoredCredential" />
+                        </oc:mapEntry>
+                        <oc:mapEntry>
+                            <oc:key xsi:type="oc:stringValue"
+                                value="prelogin_username" />
+                            <oc:value xsi:type="oc:stringValue"
+                                value="" />
+                        </oc:mapEntry>
+						<oc:mapEntry>
+                            <oc:key xsi:type="oc:stringValue" value="port" />
+                            <oc:value xsi:type="oc:stringValue" value="22" />
+                        </oc:mapEntry>
+                    </oc:mapEntries>
+                </oc:value>
+            </oc:values>
+        </value>
+    </complexCapability>
+    <complexCapability name="storedCredentialMapping">
+        <value xsi:type="oc:collectionValue">
+            <oc:values>
+                <oc:value xsi:type="oc:mapValue">
+                    <oc:mapEntries>
+                        <oc:mapEntry>
+                            <oc:key xsi:type="oc:stringValue"
+                                value="resource" />
+                            <oc:value xsi:type="oc:stringValue"
+                                value="nodecli_usertype_admin"/>
+                        </oc:mapEntry>
+						 <oc:mapEntry>
+                            <oc:key xsi:type="oc:stringValue" value="credential" />
+                            <oc:value xsi:type="oc:stringValue" value="secureUser" />
+                         </oc:mapEntry>
+                    </oc:mapEntries>
+                </oc:value>
+                <oc:value xsi:type="oc:mapValue">
+                    <oc:mapEntries>
+                        <oc:mapEntry>
+                            <oc:key xsi:type="oc:stringValue"
+                                value="resource" />
+                            <oc:value xsi:type="oc:stringValue"
+                                value="nodecli_usertype_control"/>
+                        </oc:mapEntry>
+                        <oc:mapEntry>
+                            <oc:key xsi:type="oc:stringValue"
+                                value="credential" />
+                            <oc:value xsi:type="oc:stringValue"
+                                value="secureUser"/>
+                        </oc:mapEntry>
+                    </oc:mapEntries>
+                </oc:value>
+                <oc:value xsi:type="oc:mapValue">
+                    <oc:mapEntries>
+                        <oc:mapEntry>
+                            <oc:key xsi:type="oc:stringValue"
+                                value="resource" />
+                            <oc:value xsi:type="oc:stringValue"
+                                value="nodecli_usertype_view"/>
+                        </oc:mapEntry>
+                        <oc:mapEntry>
+                            <oc:key xsi:type="oc:stringValue"
+                                value="credential" />
+                            <oc:value xsi:type="oc:stringValue"
+                                value="secureUser"/>
+                        </oc:mapEntry>
+                    </oc:mapEntries>
+                </oc:value>
+            </oc:values>
+        </value>
+    </complexCapability>
+</CapabilitySupportDefinition>

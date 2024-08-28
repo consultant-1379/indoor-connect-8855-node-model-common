@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oss_capabilitysupport:CapabilitySupportDefinition
+    oss_common:ns="Indoor-connect-8855" oss_common:name="NE-DISCOVERY" oss_common:version="1.0.0"
+    xmlns:oss_capabilitysupport="urn:com:ericsson:schema:xml:oss:oss_capabilitysupport"
+    xmlns:oss_common="urn:com:ericsson:schema:xml:oss:oss_common"
+    xmlns:oss_capability="urn:com:ericsson:schema:xml:oss:oss_capability"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <oss_common:modelCreationInfo author="Chargers" creationDate="2023-04-05 15:00:00.00">
+    <oss_common:designedModel componentId="indoor-connect-8855 Common Models" />
+    </oss_common:modelCreationInfo>
+    <oss_common:desc>Capability Support for common Indoor-connect-8855 node target type</oss_common:desc>
+           <oss_capabilitysupport:complexCapability name="sysOID">
+           <oss_capabilitysupport:value xsi:type="oss_common:collectionValue">
+         <oss_common:values>
+           <oss_common:value xsi:type="oss_common:stringValue" value=".1.3.6.1.4.1.193.235" />
+		 </oss_common:values>
+   </oss_capabilitysupport:value>
+   </oss_capabilitysupport:complexCapability>
+
+</oss_capabilitysupport:CapabilitySupportDefinition>

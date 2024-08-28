@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+    <parent>
+        <groupId>com.ericsson.oss.mediation.model.nrm.function</groupId>
+        <artifactId>node-model-common-parent</artifactId>
+        <version>1.1.211</version>
+    </parent>
+	
+	<groupId>com.ericsson.oss.mediation.model.nrm.function</groupId>
+	<artifactId>indoor-connect-8855-node-model-common</artifactId>
+	<version>1.4.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>[${project.artifactId}] Model Project</name>
+	<description>indoor-connect-8855-node-model-common model</description>
+	<modules>
+		<module>indoor-connect-8855-node-model-common-target-type-jar</module>
+		<module>Indoorconnect8855-ci-model-jar</module>
+                <module>indoor-connect-8855-node-model-common-jar</module>
+		<module>ERICindoorconnect8855nodemodelcommon_CXP9043188</module>
+	</modules>
+	<properties>
+<ericsson.scm.url>scm:git:[fetch=]ssh://gerritmirror-ha.lmera.ericsson.se:29418/OSS/ENM-Parent/SQ-Gate/com.ericsson.oss.mediation.model.nrm.function/indoor-connect-8855-node-model-common[push=]ssh://gerrit.ericsson.se:29418/OSS/ENM-Parent/SQ-Gate/com.ericsson.oss.mediation.model.nrm.function/indoor-connect-8855-node-model-common</ericsson.scm.url>
+
+		<version.osstopmodel>2.9.1</version.osstopmodel>
+		<version.com-ci-model>1.13.1</version.com-ci-model>
+        <version.networkelementdefmodel>3.53.1</version.networkelementdefmodel>
+        <version.geolocationmodel>1.6.7</version.geolocationmodel>
+		<version.modeling-bom>22.0.24</version.modeling-bom>
+		<version.annotation-processor.plugin>3.6.1</version.annotation-processor.plugin>
+		<version.model-processing>2.0.5</version.model-processing>
+        <version.mdt.plugin>7.51.1</version.mdt.plugin>
+        <model.deployment.jar.version>7.2.1</model.deployment.jar.version>
+		<version.top.ci>1.0.10</version.top.ci>
+		<version.modeling-annotation-processor-jar>3.25.2</version.modeling-annotation-processor-jar>
+	</properties>
+    <!--Profiles for site documentation-->
+
+    <!--Profile to deploy latest site-->
+    <profiles>
+        <profile>
+            <id>site_latest</id>
+            <distributionManagement>
+                <site>
+                    <id>site</id>
+                    <name>Site</name>
+                    <url>${site.url}/indoorconnect8855-node-model-common/latest</url>
+                </site>
+            </distributionManagement>
+        </profile>
+
+        <!--Profile to stage site for review -->
+
+        <profile>
+            <id>site_review</id>
+            <distributionManagement>
+                <site>
+                    <id>site</id>
+                    <name>Site</name>
+                    <url>${site.url}</url>
+                </site>
+            </distributionManagement>
+        </profile>
+    </profiles>
+    <!--Deployment of versioned documentation -->
+    <distributionManagement>
+        <site>
+            <id>site</id>
+            <name>Site</name>
+            <url>${site.url}/indoorconnect8855-node-model-common/${project.version}</url>
+        </site>
+    </distributionManagement>
+	
+    <scm>
+        <developerConnection>${ericsson.scm.url}</developerConnection>
+        <connection>${ericsson.scm.url}</connection>
+        <tag>HEAD</tag>
+    </scm>
+
+</project>
